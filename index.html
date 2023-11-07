@@ -92,7 +92,7 @@
             <ol>
                 <li>Příkaz, který nám bude přidávat změny: <code>git add .</code></li>
                 <li>Příkaz, který bude předkládat změny: <code>git commit -m initialcommit</code></li>
-                <li>Příkaz, který protlačí změny: <code>git push origin main</code></li>
+                <li>Příkaz, který protlačí změny: <code>git push -u origin main</code> (-u nastaví origin main jako výchozí branch pro push)</li>
             </ol>
             <p>Nyní může přejít zpět na GitHub a zkontrolovat, jestli všechny změny proběhly úspěšně.</p>
             <p>Pro hostování webové stránky přejděte do nastavení ve vašem projektu na GitHub.com.</p>
@@ -102,19 +102,13 @@
         <section>
             <h2>5. Designování naší webové stránky</h2>
             <p>Vrátíme se do Visual Studio Code.</p>
-            <p>Do Terminálu zadáme příkaz: <code>git checkout -b [libovolný název]</code></p>
             <p>Vytvoříme nový soubor styles.css.</p>
             <p>Odkážeme na tento soubor v index.html, tím že, do &lt;head&gt; pod &lt;title&gt; napíšeme link a dáme enter.</p>
             <p>Do nově vygenerovaného textu vložíme pouze styles.css takto: href=“styles.css“</p>
             <p>Nyní si můžeme vytvořit design naší stránky ve styles.css.</p>
             <p>Po dokončení designu uložíme a musíme znovu protlačit naší práci na naší stránku.</p>
-            <p>Do terminálu opět zdáme stejné příkazy jako před tím, ale místo initialcommit zadáme název který jsme si zvolili na začátku tvorby designu: <code>git add . ; git commit -m [Váš zvolený název] ; git push origin [Váš zvolený název]</code></p>
-            <p>Vrátíme se zpět na GitHub.com a v našem repositáři v horní části můžeme vidět oznámen s tlačítkem „Compare & pull request“, klikneme na toto tlačítko.</p>
-            <p>V dolní části se zobrazí tlačítko „Create pull request“, klikneme na něj.</p>
-            <p>Chvíli počkáme a objeví se další tlačítko „Merge pull request“ a znovu na něj klikneme a potvrdíme.</p>
-            <p>Přejdeme zpět na naší stránku a obnovíme ji.</p>
-            <p>Pokud jste vše udělali správně, měl by se aplikovat design, který jste si vytvořili.</p>
-            <p>A toto je vše, co potřebujete vědět, abyste mohli hostovat svou stránku přes GitHub.</p>
+            <p>Do terminálu opět zdáme stejné příkazy jako před tím, ale místo initialcommit zadáme název který jsme si zvolili na začátku tvorby designu: <code>git add . ; git commit -m [Váš zvolený název] ; git push</code></p>
+            <p>Github Pages nyní automaticky zareaguje na commit.</p>
         </section>
     </main>
 </body>
